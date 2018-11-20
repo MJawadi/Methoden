@@ -20,10 +20,10 @@ public class Kino {
 			task = scan.nextInt();
 			
 			if(task==1) {
-				System.out.print("The number of seat: ");
+				System.out.print("Die Nummer des Sitzes: ");
 				inNum = scan.nextInt();
 				if(takenSeats.contains(inNum)) {
-					System.out.println("Sorry!! This seat has been taken");
+					System.out.println("Entschuldigung!!! Dieser Platz wurde eingenommen");
 				}else {
 					takenSeats.add(inNum);
 				}
@@ -32,7 +32,7 @@ public class Kino {
 			}
 			
 			if(task==2) {
-				System.out.print("The number of seat: ");
+				System.out.print("Die Nummer des Sitzes: ");
 				outNum = scan.nextInt();
 				takenSeats.remove(new Integer(outNum));
 				Collections.sort(takenSeats);
@@ -40,7 +40,7 @@ public class Kino {
 			}
 			
 			if(task==3) {
-				System.out.println("\nEnd of Programm!");
+				System.out.println("\nProgramme ende!");
 				Collections.sort(takenSeats);
 				methoden(reih, sitz, takenSeats);
 				scan.close();
