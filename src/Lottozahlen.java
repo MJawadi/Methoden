@@ -6,6 +6,8 @@ public class Lottozahlen {
 	}
 	
 	public static void lotto() {
+		
+		// initialisieren die Variablen
 		ArrayList<Integer> numbers = new ArrayList<Integer>(5);
 		ArrayList<Integer> randNum = new ArrayList<Integer>(5);
 		int inNum = 1;
